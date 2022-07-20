@@ -2,17 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
 :root{
-    
+    --bg-color-body : #485b61;
+    --color-titre : black;
+    --color-red : #ff0000;
+    --color-green : rgb(17, 230, 123);
 }
 
 body {
-    background-color: #485b61;    
+    background-color: var(--bg-color-body );    
     margin: 0;
     padding: 0;
 }
 .titre{   
     font-weight: bold;
-    color: black;
+    color: var(--color-titre);
     text-align: center;
     margin-bottom: 1em;
     margin-top: 2em;
@@ -20,14 +23,14 @@ body {
 }
 .italic{
     font-style: italic;
-    color: red;
+    color: var(--color-red);
     z-index: 1;
 }
 .form-control{
-    border-color: red;
+    border-color: var(--color-red);
 }
 .material-symbols-outlined{
-    color: red; 
+    color: var(--color-red);
     cursor: pointer;  
     float: right;   
 }
@@ -45,7 +48,7 @@ body {
     z-index: -2;
 }
 .text-center{
-    color:rgb(17, 230, 123);
+    color:var(--color-green);
     font-family: 'Edu QLD Beginner', cursive;
 }
 .container > img{
